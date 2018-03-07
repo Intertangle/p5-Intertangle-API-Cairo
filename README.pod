@@ -1,0 +1,35 @@
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+Renard::Incunabula::Cairo - Helper library for the Cairo graphics library
+
+=head1 VERSION
+
+version 0.001
+
+=head1 METHODS
+
+=head2 Cairo::Matrix::to_HashRef
+
+Returns a C<HashRef> with the keys C<xx yx xy yy x0 y0> that represent the
+matrix components.
+
+=head1 SEE ALSO
+
+L<Repository information|http://project-renard.github.io/doc/development/repo/p5-Renard-Incunabula-Cairo/>
+
+=head1 AUTHOR
+
+Project Renard
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2018 by Project Renard.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
