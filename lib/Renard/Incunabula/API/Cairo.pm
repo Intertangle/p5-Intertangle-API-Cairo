@@ -1,5 +1,5 @@
 use Renard::Incunabula::Common::Setup;
-package Renard::Incunabula::Cairo;
+package Renard::Incunabula::API::Cairo;
 # ABSTRACT: Helper library for the Cairo graphics library
 
 use Cairo;
@@ -29,6 +29,6 @@ matrix components.
 1;
 =head1 SEE ALSO
 
-L<Repository information|http://project-renard.github.io/doc/development/repo/p5-Renard-Incunabula-Cairo/>
+L<Repository information|http://project-renard.github.io/doc/development/repo/p5-Renard-Incunabula-API-Cairo/>
 
 =cut
