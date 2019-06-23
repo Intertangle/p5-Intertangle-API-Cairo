@@ -12,6 +12,13 @@ version 0.001
 
 =head1 METHODS
 
+=head2 Inline
+
+  use Inline C with => qw(Renard::API::Cairo);
+
+Returns the flags needed to configure L<Inline::C> for using the
+L<Cairo> XS API.
+
 =head2 Cairo::Matrix::to_HashRef
 
 Returns a C<HashRef> with the keys C<xx yx xy yy x0 y0> that represent the
