@@ -44,10 +44,19 @@ C
 }
 
 package Cairo::Matrix {
+	# <https://cairographics.org/manual/cairo-cairo-matrix-t.html>
 	use Renard::Incunabula::Common::Setup;
 
+	use Config;
+
+	# struct elements
+	use constant NUM_OF_ELEMENTS => 6;
+
+	# bytes
+	use constant SIZEOF_DOUBLE   => $Config{doublesize};
+
 	method _unpack_struct() {
-		( unpack 'd6', unpack 'P48', pack 'J', $$self )
+		( unpack 'd'.(NUM_OF_ELEMENTS), unpack 'P'.(NUM_OF_ELEMENTS*SIZEOF_DOUBLE), pack 'J', $$self )
 	}
 
 =method Cairo::Matrix::to_HashRef
