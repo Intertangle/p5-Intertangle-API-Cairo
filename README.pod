@@ -4,7 +4,7 @@
 
 =head1 NAME
 
-Renard::API::Cairo - Helper library for the Cairo graphics library
+Intertangle::API::Cairo - Helper library for the Cairo graphics library
 
 =head1 VERSION
 
@@ -14,7 +14,7 @@ version 0.001
 
 =head2 Inline
 
-  use Inline C with => qw(Renard::API::Cairo);
+  use Inline C with => qw(Intertangle::API::Cairo);
 
 Returns the flags needed to configure L<Inline::C> for using the
 L<Cairo> XS API.
@@ -26,15 +26,13 @@ matrix components.
 
 =head1 SEE ALSO
 
-L<Repository information|http://project-renard.github.io/doc/development/repo/p5-Renard-API-Cairo/>
-
 =head1 AUTHOR
 
-Project Renard
+Zakariyya Mughal <zmughal@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2018 by Project Renard.
+This software is copyright (c) 2018 by Zakariyya Mughal.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

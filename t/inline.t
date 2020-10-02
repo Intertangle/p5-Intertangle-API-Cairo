@@ -5,7 +5,7 @@ use Test::Most tests => 1;
 use Modern::Perl;
 
 use Module::Load;
-use Renard::API::Cairo;
+use Intertangle::API::Cairo;
 
 subtest "Testing Cairo" => sub {
 	eval { load 'Inline::C' } or do {
@@ -13,7 +13,7 @@ subtest "Testing Cairo" => sub {
 		plan skip_all => "Inline::C not installed" if $error;
 	};
 
-	Inline->import( with => qw(Renard::API::Cairo) );
+	Inline->import( with => qw(Intertangle::API::Cairo) );
 
 	my @sz = (25, 50);
 	my $surface = Cairo::ImageSurface->create ('argb32', @sz);

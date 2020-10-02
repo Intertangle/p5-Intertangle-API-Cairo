@@ -2,7 +2,7 @@
 
 use Test::Most tests => 1;
 use Renard::Incunabula::Common::Setup;
-use Renard::API::Cairo;
+use Intertangle::API::Cairo;
 
 subtest "to_HashRef" => sub {
 	subtest "scale" => sub {

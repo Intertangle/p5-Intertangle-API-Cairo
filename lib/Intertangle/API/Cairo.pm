@@ -1,5 +1,5 @@
 use Renard::Incunabula::Common::Setup;
-package Renard::API::Cairo;
+package Intertangle::API::Cairo;
 # ABSTRACT: Helper library for the Cairo graphics library
 
 use Cairo;
@@ -7,7 +7,7 @@ use List::MoreUtils qw(zip);
 
 =method Inline
 
-  use Inline C with => qw(Renard::API::Cairo);
+  use Inline C with => qw(Intertangle::API::Cairo);
 
 Returns the flags needed to configure L<Inline::C> for using the
 L<Cairo> XS API.
@@ -77,6 +77,6 @@ matrix components.
 1;
 =head1 SEE ALSO
 
-L<Repository information|http://project-renard.github.io/doc/development/repo/p5-Renard-API-Cairo/>
+
 
 =cut
